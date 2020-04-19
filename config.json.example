@@ -1,0 +1,15 @@
+{
+  "token": "token",
+  "join_message": "join message",
+  "owners": [
+    "your_id"
+  ],
+  "prefix": [
+    "prefix"
+  ],
+  "botserver": "bot server",
+  "playing": "rpc",
+  "playing_type": "playing|watching|listening",
+  "status_type": "online|idle|dnd",
+  "version": "1.0.0"
+}
