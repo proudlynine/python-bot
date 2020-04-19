@@ -4,7 +4,7 @@ from utils import default
 from utils.data import Bot, HelpFormat
 
 config = default.get("config.json")
-print("Logging in...")
+print("[INFO] Bot starting...")
 
 bot = Bot(
     command_prefix=config.prefix,
@@ -17,6 +17,6 @@ for file in os.listdir("cogs"):
     if file.endswith(".py"):
         name = file[:-3]
         bot.load_extension(f"cogs.{name}")
-        print(f'loaded extension {name}')
+        print(f'[INFO] Loaded extension: {name}')
 
 bot.run(config.token)
